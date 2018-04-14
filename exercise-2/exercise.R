@@ -53,7 +53,7 @@ biggest_paycut <- min(salaries$change)
 got_biggest_paycut <- salaries[salaries$change == biggest_paycut, "employees"]
 
 # What was the average salary change?
-avg_increase <- mean(salaries$change)
+avg_change <- mean(salaries$change)
 
 # For people who did not get a raise, how much money did they lose on average?
 avg_loss <- mean(salaries$change[salaries$got_raise == FALSE])
